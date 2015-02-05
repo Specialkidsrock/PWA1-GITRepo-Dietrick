@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  PWA1-####
+     Name: Terry Dietrick
+     Date: 04 Feb 2015
+     Class & Section:  PWA1-Sec 01
      Comments: "Goal 1: Review of WPF"
  */
 
@@ -52,7 +52,10 @@
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
-
+    var name = "michael";
+    var course = "PWA1";
+    var month = 3;
+    console.log("name: ", name + " / course: ", course + " / month: ", month );
 
     //example 2: variables not defined will = "undefined"
 
@@ -152,7 +155,9 @@ console.log('------ arrays ----------');
 
  ********************************************/
 
-
+var sumArray;
+var myArray = [ 10, 50, 100, 200];
+sumArray = (myArray [1 ])
 
 /*******************************************
 
