@@ -252,6 +252,8 @@ console.log('------ conditionals ----------');
         a true or false boolean
     - conditions can be used just about anywhere, not just in conditionals and loops
 */
+    var myVar = 5 > 3;
+    console.log("Is 5 greater than 3: ", myVar);
 
 
 
@@ -269,7 +271,10 @@ console.log('------ conditionals ----------');
             //block of code or ‘actions’
          };
 */
-
+    if (5 > 3){
+        //execute code here.
+        console.log("5 > 3:, True!");
+    }
 
 
 /*
@@ -284,6 +289,17 @@ console.log('------ conditionals ----------');
 
     // == performs a loose check of two values
 
+    if("1" == 1){
+        console.log("'1' == 1, True");
+    }
+
+    if (1 == 1){
+        console.log("1 == 1, True");
+    }
+
+    if("1" !== 1){
+        console.log("'1' !== 1, True");
+    }
 
 
 /* ==============================================================
@@ -298,11 +314,26 @@ console.log('------ conditionals ----------');
  ================================================================
  */
 
+    if("a" === "b"){
+        //True: run code
+        console.log("a is less than b");
+    }else{
+        //False: run code
+        console.log("if-else: the 'IF' statement is false");
 
+    }
 
     //if - else if - else (allows for multiple options)
 
-
+    if("a" > "b") {
+        console.log("a is less than b");
+    }else if ("a" < "c"){
+        console.log("a is less than c");
+    }else if ("a" < "d"){
+        console.log("a is less than d");
+    }else{
+        console.log("if - else if: all others returned false");
+    }
 
     //nested conditional statement
 
