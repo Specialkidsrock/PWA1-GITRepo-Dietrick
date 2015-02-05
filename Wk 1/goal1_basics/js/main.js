@@ -403,6 +403,14 @@ console.log('------ conditionals ----------');
     1. learn if - else
  ********************************************/
 
+    var weather = "Cloudy";
+    if(weather === "Sunny"){
+        bobsMood = "Happy";
+
+    }else {
+        bobsMood = "Sad";
+    }
+    console.log(bobsMood);
 
 
 
@@ -422,6 +430,29 @@ console.log('------ conditionals ----------');
     3.  console.log the results after each conditional
  ********************************************/
 
+    var weather = "Cloudy";
+    var waves = 10;
+
+    if(weather === "Sunny") {
+        if (waves = 10) {
+            bobsMood = "Pumped"
+        } else if ((waves <= 9 ) && (waves >= 5)) {
+            bobsMood = "Mellow";
+        } else {
+            bobsMood = "Bummed";
+        }
+    }else if (weather === "Overcast"){
+        if ((waves < 10) && (waves >= 7)){
+            bobsMood = "JackedUp"
+        }else if ((waves <= 6) && (waves >= 3)){
+                bobsMood= "Totally bummed";
+        }else{
+            bobsMood = "Not Happy";
+            }
+    }else {
+    bobsMood = "Sad";
+    }
+    console.log("Bob's mood is:", bobsMood);
 
 
 
