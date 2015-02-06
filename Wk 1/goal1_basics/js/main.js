@@ -101,6 +101,7 @@ console.log('------ strings ----------');
 // numbers (definition, concatenation +, math, numbers & strings)
 console.log('------ numbers ----------');
 
+    
     // arithmetic operators:  +, -, /, *, % (modulo)
 
 
@@ -544,6 +545,16 @@ console.log('------Functions ----------');
      - type the below as an example
         functionName();
  *****************************
+*/
+    var myctr = 1;
+    var myCounter = function() {
+        var testVar = 0;
+        myctr++;
+        console.log("counter = ", myctr);
+    };
+
+    myCounter();
+    myCounter();
 
 
 
@@ -583,6 +594,14 @@ console.log('------Functions ----------');
     - items inside our function we call on these variables.. such as:
  */
 
+    var value1 = 1;
+    var value2 = 2;
+
+    var myFn = function(var1, var2){
+        console.log("function number: ", var1 + var2);
+    };
+
+    myFn(value1, value2);
 
 
 
@@ -594,10 +613,18 @@ console.log('------Functions ----------');
      2.  pass a parameter called 'newct' into the function
      3   add the myctr to the parameter being passed into the function
      4.  first time: pass a 5 into the function as an argument
-     5.  second time: pass a 2 into the funciton as an argument
+     5.  second time: pass a 2 into the function as an argument
      6.  console.log the results
  ********************************************/
 
+    var myctr = 1;
+    var myCounter = function(newct) {
+        var myctr = 50;
+        myctr += newct;
+        console.log("Counter =", myctr);
+    };
+    myCounter(5);
+    myCounter(2);
 
 
 
@@ -611,7 +638,12 @@ console.log('------Functions ----------');
     - the called function should be assigned to a variable (i.e name - see below)
  ********************************************/
 
+    var myFn = function(){
+    return "jamesBond";
 
+    };
+    var name = myFn();
+    console.log(name);
 
     // if a return gives back no value, it instead returns “undefined”
     // this technique is commonly used to end a function early, during execution
@@ -629,6 +661,21 @@ console.log('------Functions ----------');
     4.  console.log the results
  ********************************************/
 
+    var myctr = 1;
+
+    var myCounter = function(newct) {
+        //var myctr = 50;
+        myctr += newct;
+        return myctr;
+
+    };
+
+    var cnt = myCounter(5);
+    console.log("Counter = ", cnt);
+    var cnt = myCounter(2);
+    console.log("Counter = ", cnt);
+
+
 
 
 
@@ -642,3 +689,33 @@ console.log('------Functions ----------');
  5. console.log the Results
  ********************************************/
 
+    var value1 = "Overcast";
+    var value2 = 5;
+
+    var moodFn = function(weather, waves){
+        if (weather === "Sunny"){
+            if (waves = 10){
+                mood = "Pumped";
+            }else if ((waves <= 9) && (waves >= 5)){
+                mood = "Mellow";
+            }else{
+                mood = "Bummed";
+            }
+
+        }else if (weather === "Overcast"){
+            if ((waves < 10) && (waves >= 7)) {
+                mood = "JackedUp";
+            }else if ((waves <= 6) && (waves >= 3)) {
+                mood = "Totally bummed";
+            }else{
+                mood = "Not Happy";
+            }
+        }else{
+            mood = "Sad";
+        };
+        return mood;
+    };
+
+    var moodType = moodFn(value1, value2);
+
+    console.log("Bob's mood is:", moodType);
