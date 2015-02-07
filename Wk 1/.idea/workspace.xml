@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63bde48-cc90-454c-abec-507c1018c5ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goal2_practice/index.html" afterPath="$PROJECT_DIR$/goal2_practice/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goal2_practice/js/main.js" afterPath="$PROJECT_DIR$/goal2_practice/js/main.js" />
     </list>
     <ignored path="Wk 1.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goal2_practice/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11904762" vertical-offset="2955" max-vertical-offset="8235">
-              <caret line="202" column="92" selection-start-line="202" selection-start-column="92" selection-end-line="202" selection-end-column="92" />
+            <state vertical-scroll-proportion="0.6666667" vertical-offset="3540" max-vertical-offset="8490">
+              <caret line="264" column="55" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -385,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/goal2_practice/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11904762" vertical-offset="2955" max-vertical-offset="8235">
-          <caret line="202" column="92" selection-start-line="202" selection-start-column="92" selection-end-line="202" selection-end-column="92" />
+        <state vertical-scroll-proportion="0.6666667" vertical-offset="3540" max-vertical-offset="8490">
+          <caret line="264" column="55" selection-start-line="264" selection-start-column="55" selection-end-line="264" selection-end-column="55" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
