@@ -22,7 +22,7 @@
     var playerOneHealth = 100;                              //Variable assigned as the starting max health of player 1
     var playerTwoHealth = 100;                              //Variable assigned as the starting max health of player 2
 
-    var round = 1;                                          //Variable assigned to keep track of the rounds of the fight
+    var round = 0;                                          //Variable assigned to keep track of the rounds of the fight
 
 
     function fight() {                                       //Declares the function that will be used but does not execute until called
@@ -70,9 +70,9 @@
     };
 
     function winnerCheck(){
-        //console.log("in winner check function");          //testing to ensure the function winner check was working
+        console.log("in winner check function");          //testing to ensure the function winner check was working
 
-        var results = "no winner";
+        var results = "no winner";                          //declares the variable and gives it the string value of no winner
 
         if(playerOneHealth < 1 && playerTwoHealth < 1){     //conditional to heck and see if either players health is less then 1
             results = "You both Die!"
