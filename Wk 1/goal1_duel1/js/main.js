@@ -48,13 +48,36 @@
             playerOneHealth -= f1;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
             playerTwoHealth -= f2;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
 
-            console.log(playerOneHealth);
-            console.log(playerTwoHealth);
+            //console.log(playerOneHealth);
+            //console.log(playerTwoHealth);
+
+            //console.log(playerOneName + " : " + playerOneHealth + "  " + playerTwoName + " : " + playerTwoHealth);
+
+
+            var results = winnerCheck();                                  //calls for the winnerCheck function to begin
+            console.log(results);
+
+
         }
     };
 
     function winnerCheck(){
-        //code will go here
+        console.log("in winner check function");
+
+        var results = "no winner";
+
+        if(playerOneHealth < 1 && playerTwoHealth < 1){     //conditional to heck and see if either players health is less then 1
+            results = "You both Die!"
+
+        }else if(playerOneHealth < 1){                      //conditional to check and see if player 1's health is less then 1 resulting in player 2 winning
+            results = playerTwoName + " Wins!!! "
+
+        }else if(playerTwoHealth < 1){                      //conditional to check and see if player 2's health is less then 1 resulting in player 1 winning
+            results = playerTwoName + " Wins!!! "
+        };
+
+        return results;
+
     };
 
 
