@@ -57,12 +57,20 @@
             var results = winnerCheck();                                  //calls for the winnerCheck function to begin
             console.log(results);
 
+            if(results === "no winner"){                                 //conditional to check and see if no winner has been found
+                round ++;                                                //increments the round by 1
+                alert(playerOneName + " : " + playerOneHealth + " Round : " + round + " OVER " + playerTwoName + " : " + playerTwoHealth);      //prompts the user the current player health and round number
+            }else{
+                alert(results);                             //displays the winner in a prompt to the user if there is one
+                break;                                      //breaks out of for loop and exits the js
+            }
+
 
         }
     };
 
     function winnerCheck(){
-        console.log("in winner check function");
+        //console.log("in winner check function");          //testing to ensure the function winner check was working
 
         var results = "no winner";
 
