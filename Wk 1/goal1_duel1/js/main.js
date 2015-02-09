@@ -5,3 +5,8 @@
  Comments: "Goal 1 Duel"
  */
 
+// self-executing function
+
+(function(){
+    console.log("Fight!!!");
+})();
