@@ -30,7 +30,7 @@
 
                                                             //An alert that prompts the user the information on the players name and health using string concatenation with global variables
 
-        alert(playerOneName + ":" + playerOneHealth + " ** START ** " + playerTwoName + ":" + playerTwoHealth);
+        alert(playerOneName + " : " + playerOneHealth + " ** START ** " + playerTwoName + " : " + playerTwoHealth);
 
         for (var i = 0; i < 10; i++) {                      //Creates a for loop to increment the round number up to round 10
 
@@ -41,8 +41,15 @@
             var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);     //random formula is - Math.floor(Math.random() * (max - min) + min);
             var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);     //math.random generates a decimal number between 0 an 1
                                                                                                 //(max - min) + min then is used to generate a number between the min and max and the math.floor rounds it to an integer
-            console.log(f1);
-            console.log(f2);
+            //console.log(f1);                              //prints to the console to verify the random numbers are being generated
+            //console.log(f2);                              //prints to the console to verify the random numbers are being generated
+
+            //inflict damage
+            playerOneHealth -= f1;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
+            playerTwoHealth -= f2;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
+
+            console.log(playerOneHealth);
+            console.log(playerTwoHealth);
         }
     };
 
