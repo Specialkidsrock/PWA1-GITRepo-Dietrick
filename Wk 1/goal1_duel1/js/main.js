@@ -8,7 +8,7 @@
 // self-executing function
 
 (function(){
-    console.log("Fight!!!");
+    console.log("Fight!!!");                               //Writes out a message to the console in the browser to verify js source functionality with html file
 
     //player name
     var playerOneName = "Superman";                         //Variable assigned the name "Superman"
@@ -24,6 +24,21 @@
 
     var round = 1;                                          //Variable assigned to keep track of the rounds of the fight
 
-    
+
+    function fight(){                                       //Declares the function that will be used but does not execute until called
+        console.log("In the fight function");
+        winnerCheck()
+    };
+
+    function winnerCheck(){
+        //code will go here
+    };
+
+
+    /******* The program starts below with the fight function *******/
+
+    console.log("Program starts here");
+    fight(); //execute the fight function call
+
 
 })();
