@@ -73,18 +73,18 @@
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){                                           //function called no match that displays no results found
-		var html = ''+
+		var html = ''+                                                  //var html to show the inner html to include the messages on the following lines
 			'<p>No Results found.</p>'+
 			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
 		;
-		resultsDIV.innerHTML = html;
+		resultsDIV.innerHTML = html;                                    //div container containing the js results of the function
 	};
 	
 	// Put matches into page as paragraphs with anchors
-	var showMatches = function(results){
+	var showMatches = function(results){                              //show matches function
 		
 		// THE NEXT 4 LINES ARE CORRECT.
-		var html = '<p>Results</p>', 
+		var html = '<p>Results</p>',                                  //inner html
 			title, 
 			url
 		;
@@ -108,13 +108,13 @@
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
-	document.forms[0].onsubmit = function(){
+	document.forms[0].onsubmit = function(){                        //onsbumit or when the users clicks the submit button
 		var query = searchInput.value;
 		validqte(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
-		return false;
+		return false;                                               //prevents the form from being submitted
 	;
 
 })();
