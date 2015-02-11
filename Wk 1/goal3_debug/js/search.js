@@ -1,51 +1,51 @@
 // Create privatized scope using a self-executing function
-(function(){
+(function(){                                                                // self executing function meant to execute what's in parenthesis immediately
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
-		currentSearch = ''
+	var resultsDIV = document.getElementById("results"),                    //declares resultsDiv as a variable and assigns it the value from "results" and the line should end with a semi colon
+		searchInput = document.forms[0].search,                             //the searchInput function is given the value of document index 0, the .search should be .submit and the line should end with a semi colon as well as start with "var"
+		currentSearch = ''                                                  //currentSearch variable not declared using the "var" and the line doesn't end with a semi colon
 	;
 	
 	// Validates search query
-	var validqte == function(query){
+	var validqte == function(query){                                       //variable validate spelled incorrectly, and this variable is assigned the value of the function result
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
-			query = query.substring(1, query.length);
+		while(query.charAt(0) = " "){                                      //starts a while loop for the query function using the .charat method which returns the first letter of the string
+			query = query.substring(1, query.length);                      //returns the extracted character in that position from the string, and the length as a number.
 		};
-		while(query.charAt(query.length-1) === ""){
+		while(query.charAt(query.length-1) === ""){                        //while loop that uses the .charat method and .length - 1 to see how long the entered search string is
 			query = query.substring(0, query.length-1);
 		;
 		
 		// Check search length, must have 3 characters
-		if(query.length < 3){
-			alert("Your search query is too small, try again.);
-			
+		if(query.length < 3){                                               //if statement that checks the query length is less then 3 characters
+			alert("Your search query is too small, try again.)
+                                                                            //the line about is missing a quotation and prompts the user using the alert feature that their search entry is too short
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
-			searchInput.focus();
-			return;
+			searchInput.focus();                                            //sets the focus on the searchInput box for the user
+			return;                                                         //returns the result of the function
 		};
 		
-		search(query);
+		search(query);                                                      //calls the function
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query)                                            //declares the variable search with the value of the function query missing closing semi colon
 		
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = query.join(" ");                                  //declares the array, and sets the users entered string items into an array
 		
 		// array to store matched results from database.js
-		var results = [];
+		var results = [];                                                  //creates the results array
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){
+		for(var i=0, j=db.length; i<j; i++){                               //for loop that loops through the index of the database array
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
-			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+			var dbTitleEnd = db[i].indexOf('|');                           //var dbTitleEnd that is assigned the value of the db index value i (a video item)
+			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);     //assigns the var dbitem(not camelcase) the value of the current db index # and converts it to lower case 
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
@@ -56,7 +56,7 @@
 				// If a match is found, push full db[i] into results array
 				var compare = dbitem.indexOf(qitem);
 				if(compare !== -1){
-					results.push(db[i]);
+					results.push(db[i]);                                //adds new item to the end of the variable and returns the length
 				};
 			;
 		;
