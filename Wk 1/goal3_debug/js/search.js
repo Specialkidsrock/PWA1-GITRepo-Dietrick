@@ -45,34 +45,34 @@
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');                           //var dbTitleEnd that is assigned the value of the db index value i (a video item)
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);     //assigns the var dbitem(not camelcase) the value of the current db index # and converts it to lower case 
+			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);     //assigns the var dbitem(not camelcase) the value of the current db index # and converts it to lower case from the 0 position of the string to the end
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
+			for(var ii=0, jj=queryArray.length; ii<jj; ii++){              //for loop that assigns the variable ii to 0 and jj the array length in a numeric value. if ii < jj it
+				var qitem = queryArray[ii].tolowercase();                  //stores the ii variable (keyword) into the queryarray as lowercase in the qitem variable
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
-				var compare = dbitem.indexOf(qitem);
+				var compare = dbitem.indexOf(qitem);                    //variable compare to compare if the
 				if(compare !== -1){
 					results.push(db[i]);                                //adds new item to the end of the variable and returns the length
 				};
 			;
 		;
 		
-		results.sort();
+		results.sort();                                                 //sorts the results array alphabetically
 		
 		// Check that matches were found, and run output functions
-		if(results.length = 0){
+		if(results.length = 0){                                         //if the results array length method results in zero then it calls the function no match
 			noMatch();
-		}else{
+		}else{                                                          //else the length of the array is longer then zero it calls the show matches function
 			showMatches(results);
 		};
 	};
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
-	var noMatch = function(){
+	var noMatch = function(){                                           //function called no match that displays no results found
 		var html = ''+
 			'<p>No Results found.</p>'+
 			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
