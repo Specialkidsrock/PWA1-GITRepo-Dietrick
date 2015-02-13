@@ -6,131 +6,125 @@
  */
 
 // scope wrapper (self executing function)
-(function(){
-	
-/* 
-	===============================================
-	RESEARCHING
-	-----------------------------------------------
-	To find documentation, use http://dochub.io
-*/	
-	
-	
-/* 
-	===============================================
-	RECAP:  Data Types
-	-----------------------------------------------
+(function() {
+
+    /*
+     ===============================================
+     RESEARCHING
+     -----------------------------------------------
+     To find documentation, use http://dochub.io
+     */
+
+
+    /*
+     ===============================================
+     RECAP:  Data Types
+     -----------------------------------------------
      "string"			              string literal
      1, 3.14, 10e10			  number literal
      TRUE / FALSE			  boolean literal
      ["a", "b", "c"]				  array literal
      function(arg, arg2){}	  function literal
      undefined					  undefined
-*/
-	
-
-/*
-	===============================================
-	RECAP:  Variable Declarations
-	-----------------------------------------------
-	syntax, comma separated, undefined declarations
-*/
-
-console.log('------Recap Variables ----------');
+     */
 
 
+    /*
+     ===============================================
+     RECAP:  Variable Declarations
+     -----------------------------------------------
+     syntax, comma separated, undefined declarations
+     */
 
-/*
-	===============================================
-	RECAP:  conditionals
-	-----------------------------------------------
-    syntax, condition, different types of conditionals
-
-	a CONDITION is a boolean test between two values, the resulting boolean can be saved 
-
-		comparison operators:
-		<, >, >=, <=,!=,!==,!
-
-		conditional syntax:
-			if (condition) {
-	  			//block of code or ‘actions’
-			};
-
-		== 	is the equality operator, does not check against data type
-		=== is the identity operator, checks data type match - will use this
-
-        Best Practice:  Use identity operator 99% of the time
-*/	
-
-console.log('------Recap Conditionals ----------');
+    console.log('------Recap Variables ----------');
 
 
-	/* 	==============================================================
-		if - else statements (allows only for one option)
-			
-		if (a < b){
-			//execute this block of code if a is less than b
-		}else{
-			//execute this block of code
-		};
-  		================================================================
-  	*/
+    /*
+     ===============================================
+     RECAP:  conditionals
+     -----------------------------------------------
+     syntax, condition, different types of conditionals
+
+     a CONDITION is a boolean test between two values, the resulting boolean can be saved
+
+     comparison operators:
+     <, >, >=, <=,!=,!==,!
+
+     conditional syntax:
+     if (condition) {
+     //block of code or ‘actions’
+     };
+
+     == 	is the equality operator, does not check against data type
+     === is the identity operator, checks data type match - will use this
+
+     Best Practice:  Use identity operator 99% of the time
+     */
+
+    console.log('------Recap Conditionals ----------');
 
 
+    /* 	==============================================================
+     if - else statements (allows only for one option)
 
-	/* 	==============================================================
-		if - else if - else statements (allows for multiple conditionals
-
-		if (a < b){
-			//execute this block of code if a is less than b
-		}else if{
-			//execute this block of code
-		}else{
-			//execute this block of code
-		};
-  		================================================================
-  	*/
+     if (a < b){
+     //execute this block of code if a is less than b
+     }else{
+     //execute this block of code
+     };
+     ================================================================
+     */
 
 
+    /* 	==============================================================
+     if - else if - else statements (allows for multiple conditionals
 
-  	/*
-         Logical Operators
-             && = AND
-             || = OR
-	*/
-
-
-
-	/*
-		Ternary conditional:
-
-		    conditional ? true : false;
-
-			same as:
-
-				if (weather === "Cloudy"){
-					mood = 
-				}else{
-					//false
-				};
-	*/
+     if (a < b){
+     //execute this block of code if a is less than b
+     }else if{
+     //execute this block of code
+     }else{
+     //execute this block of code
+     };
+     ================================================================
+     */
 
 
-/*
-	===============================================
-	RECAP:  Functions
-	-----------------------------------------------
-	syntax, arguments, returns, variable scope
-*/
+    /*
+     Logical Operators
+     && = AND
+     || = OR
+     */
 
-console.log('------Recap Functions ----------');
+
+    /*
+     Ternary conditional:
+
+     conditional ? true : false;
+
+     same as:
+
+     if (weather === "Cloudy"){
+     mood =
+     }else{
+     //false
+     };
+     */
+
+
+    /*
+     ===============================================
+     RECAP:  Functions
+     -----------------------------------------------
+     syntax, arguments, returns, variable scope
+     */
+
+    console.log('------Recap Functions ----------');
 
     //	1.  BASIC FUNCTION:
 
 
-
     //	2.  ANONYMOUS FUNCTION
-
 
 
     //Anonymous passing arguments
@@ -139,23 +133,22 @@ console.log('------Recap Functions ----------');
     //Anonymous passing arguments WITH RETURN
 
 
+    /*******************************************************************
+     REVIEW COMPLETE
+     *******************************************************************/
 
-/*******************************************************************
- 	REVIEW COMPLETE
-*******************************************************************/
 
+    /*
+     ===============================================
+     MORE:  Strings
+     -----------------------------------------------
+     */
 
-/*
-	===============================================
-	MORE:  Strings
-	-----------------------------------------------
-*/
+    console.log('------ MORE Strings ----------');
 
-console.log('------ MORE Strings ----------');
-
-var str1 = 'I love JavaScript! ';
-var str2 = 'JavaScript loves me!';
-var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var str1 = 'I love JavaScript! ';
+    var str2 = 'JavaScript loves me!';
+    var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 // Use charAt() to console.log the 'v' in str1.
 
@@ -181,7 +174,7 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 //STUDENT ACTIVITY 1:
 // Use substr() to console.log 'JavaScript!' from str1.
 
-    console.log(str1.substr(7,11));
+    console.log(str1.substr(7, 11));
 
 // Use concat() to console.log 'I love JavaScript ! JavaScript loves me!' with str1 and str2.
 
@@ -203,13 +196,13 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 // Use toString() to console log the type of str1 to output the type of string the string is
     console.log(typeof str1.toString());
 
-/*
-	===============================================
-	MORE:  Numbers
-	-----------------------------------------------
-*/
+    /*
+     ===============================================
+     MORE:  Numbers
+     -----------------------------------------------
+     */
 
-console.log('------ MORE Numbers ----------');
+    console.log('------ MORE Numbers ----------');
 
     var num = 457896;
     var dec = 33.123456;
@@ -234,48 +227,48 @@ console.log('------ MORE Numbers ----------');
     console.log(typeof num.toString());
 
 
-/*
-	===============================================
-	MORE:  Booleans
+    /*
+     ===============================================
+     MORE:  Booleans
 
-	TRUTHY / FALSY
-	-----------------------------------------------
-	Because of JavaScript's loose syntax, some values are == false, 
-	we call these FALSY.
-		
-		false 		== false  	| true
-		0 			== false	| true
-		"" 			== false	| true
-		undefined 	== false	| true  //var does not exist
-		NaN 		== false	| true 
-	
-	So the following conditional fails...
-	-----------------------------------------------
-*/
+     TRUTHY / FALSY
+     -----------------------------------------------
+     Because of JavaScript's loose syntax, some values are == false,
+     we call these FALSY.
 
-console.log('------ MORE Booleans ----------');
+     false 		== false  	| true
+     0 			== false	| true
+     "" 			== false	| true
+     undefined 	== false	| true  //var does not exist
+     NaN 		== false	| true
+
+     So the following conditional fails...
+     -----------------------------------------------
+     */
+
+    console.log('------ MORE Booleans ----------');
 
     var num = 9 * "k";
     console.log(num);
 
-    if (num){
+    if (num) {
         console.log("It's true, the value is: ", num);
 
-    }else{
+    } else {
         console.log("It's false, the value is: ", num);
     }
-	
-/*
-	===============================================
-	MORE:  Arrays
-	-----------------------------------------------
-*/
 
-console.log('------ MORE Arrays ----------');
+    /*
+     ===============================================
+     MORE:  Arrays
+     -----------------------------------------------
+     */
 
-var arr1 = [1, 2, 3, 4, 5, 6, 7];
-var arr2 = ['a', 'b', 'c', 'd', 'e'];
-var arr3 = ['apple', 'orange', 50393, 7.324];
+    console.log('------ MORE Arrays ----------');
+
+    var arr1 = [1, 2, 3, 4, 5, 6, 7];
+    var arr2 = ['a', 'b', 'c', 'd', 'e'];
+    var arr3 = ['apple', 'orange', 50393, 7.324];
 
 // indexOf()
 //Returns the first (least) index of an element within the array equal
@@ -309,23 +302,21 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 // Calls a function for each element in the array.
 
 
+    /*******************************************
+     STUDENT ACTIVITY 5:
 
+     1.  concatenate the firstQtr and secondQtr arrays and store the results in the
+     variable combined
+     2.  console.log the results stored in the variable combined
+     3.  combine all three arrays and stored the results in the variable combined
+     4.  console.log the results stored in the variable combined
 
-/*******************************************
- STUDENT ACTIVITY 5:
-
- 1.  concatenate the firstQtr and secondQtr arrays and store the results in the
-        variable combined
- 2.  console.log the results stored in the variable combined
- 3.  combine all three arrays and stored the results in the variable combined
- 4.  console.log the results stored in the variable combined
-
- Use the combined variable for items 5 and 6 the below:
- 5.  join the array elements into a string and console.log the results
- 6.  remove the last element of the array and console.log the results and the new array
- 7.  use array "secondHalfYr", and reduce the array to "Sept" & "Oct"
-        and console.log the results
- ********************************************/
+     Use the combined variable for items 5 and 6 the below:
+     5.  join the array elements into a string and console.log the results
+     6.  remove the last element of the array and console.log the results and the new array
+     7.  use array "secondHalfYr", and reduce the array to "Sept" & "Oct"
+     and console.log the results
+     ********************************************/
 
     var firstQtr = ["Jan", "Feb", "Mar"];
     var secondQtr = ["Apr", "May", "Jun"];
@@ -333,82 +324,154 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
     var combined;
 
 
-/*
-	===============================================
-	MORE:  Operators (typeof())
-	-----------------------------------------------
-	
-	How to test for a variable's existence (typeof)	
-*/
+    /*
+     ===============================================
+     MORE:  Operators (typeof())
+     -----------------------------------------------
 
-console.log('------ MORE Operators - typeof() ----------');
+     How to test for a variable's existence (typeof)
+     */
+
+    console.log('------ MORE Operators - typeof() ----------');
+
+    console.log(typeof(5));
+    console.log(typeof "Hi");
+
+    var str1 = "hello";
+    console.log(typeof str1);
+
+    console.log(typeof false);
+    console.log(typeof function () {
+    });
+
+    console.log(typeof obj1);
+    console.log(typeof [1, 2, 3, 4, 5]);
+
+    console.log(typeof missingVariable);
+
+    console.log(typeof myString === "undefined");
+    if (typeof myString === "undefined") {
+        console.log("myString is undefined");
+    } else {
+        console.log("myString is:", myString);
+    }
+    ;
+
+    /*
+     ===============================================
+     MORE:  Conditionals (switch())
+     -----------------------------------------------
+
+     - “if” conditionals are perfect for comparing several sets of varying conditions
+     - switch statements will evaluate a single conditional expression and
+     then perform an equality check against possible cases
+
+     Traditional IF and IF Else
+     if (condition) {
+     // statements1
+     };
+
+     if (condition) {
+     // statements1
+     } else {
+     // statements2
+     };
+
+     */
+
+    console.log('------ MORE Conditionals - Switch ----------');
+
+    var fruit = "Grapes";
+
+    switch (fruit) {
+        case "Oranges":
+            console.log("Oranges are $0.59 a pound.");
+            break;
+        case "Apples":
+            console.log("Apples are $0.32 a pound.");
+            break;
+        case "Bananas":
+            console.log("Bananas are $0.48 a pound.");
+            break;
+        case "Cherries":
+            console.log("Cherries are $3.00 a pound.");
+            break;
+        case "Mangoes":
+        case"Papayas":
+            console.log("Mangoes and papayas are $2.79 a pound.");
+            break;
+        default:
+            console.log("Sorry, we are out of " + fruit + ".");
+
+    }
+    ;
+
+    /*******************************************
+     STUDENT ACTIVITY 6:
+
+     1.  create a "Switch" conditional that does the following:
+     a.  have a var named "age" initialized to a number
+     b.  if age 13 then console.log "child"
+     if age 18 then console.log "adult"
+     if no age then console.log "No answer"
+     ********************************************/
+
+    var age = 18;
+
+    switch (age) {
+        case 13:
+            console.log("Child");
+            break;
+        case 18:
+            console.log("Adult");
+            break;
+        default:
+            console.log("No answer.");
+    }
+    ;
+
+    /*
+     ===============================================
+     MORE:  Functions
+     -----------------------------------------------
+
+     - we reviewed returns and we went through examples with returns only
+     returning one value
+     - below shows how to returning multiple values using arrays
+
+     */
+
+    console.log('------ MORE Functions ----------');
+
+    var bondsCars = function () {
+        return ["ferrari", "lambo", "vwBug"];
+    };
+
+    var cars = bondsCars();
+    console.log("James Bond cars, ", cars);
 
 
-/*
-	===============================================
-	MORE:  Conditionals (switch())
-	-----------------------------------------------
-	
-	- “if” conditionals are perfect for comparing several sets of varying conditions  
-	- switch statements will evaluate a single conditional expression and
-		then perform an equality check against possible cases
+    /*
+     Self Executing Functions
 
-	Traditional IF and IF Else
-	if (condition) {
-		// statements1
-	};
+     (function(){   //this is a basic function which includes () at end
+     //code goes here
+     })();          //the () tells the function to run immediately
 
-	if (condition) {
-		// statements1
-	} else {
-		// statements2
-	};	
+     Normal function:
+     var fn = function(){};  //a normal function
 
-*/
+     fn();	//invoking the fn function
 
-console.log('------ MORE Conditionals - Switch ----------');
+     self function - combining the 2 statement above
+     var fn = (function(){})();
+     */
 
-/*******************************************
- STUDENT ACTIVITY 6:
+    function () {
+    }
 
-	1.  create a "Switch" conditional that does the following:
-		a.  have a var named "age" initialized to a number
-		b.  if age 13 then console.log "child"
-			if age 18 then console.log "adult"
-			if no age then console.log "No answer"
-********************************************/
-
-
-
-/*
-	===============================================
-	MORE:  Functions
-	-----------------------------------------------
-
-	- we reviewed returns and we went through examples with returns only 
-		returning one value
-	- below shows how to returning multiple values using arrays
-
-*/
-
-console.log('------ MORE Functions ----------');
-
-
-	/* 
-		Self Executing Functions
-	
-		(function(){   //this is a basic function which includes () at end
-			//code goes here
-		})();          //the () tells the function to run immediately
-
-		Normal function:
-			var fn = function(){};  //a normal function
-		
-			fn();	//invoking the fn function
-
-			self function - combining the 2 statement above
-				var fn = (function(){})();	
-	*/	
+    ();
+    
 
 
 /*
