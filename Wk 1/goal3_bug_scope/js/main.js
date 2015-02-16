@@ -1,6 +1,8 @@
 /*
-	PWA1 Goal 3
-	JavaScript Debugging & Scope
+ Name: Terry Dietrick
+ Date: 14 Feb 2015
+ Class & Section:  PWA1-Sec 01
+ Comments: PWA1 Goal 3 JavaScript Debugging & Scope
 */
 
 
@@ -256,6 +258,18 @@ console.log('------ Debugging ----------');
 */
 console.log("---------- Scope & Context ----------------");
 
+    var myctr = 0;
+
+    var myCounter1 = function(newct){
+
+        var myctr = newct + 10;
+        console.log("function: ", myctr);
+    };
+
+    myCounter1(5);
+
+    console.log("After function myctr:", myctr);
+
 
 
 
@@ -269,6 +283,27 @@ console.log("---------- Scope & Context ----------------");
 */
 
     console.log("---------- Closure ----------------");
+
+
+    //var fname = "James";
+
+    //var nameFN = function (var1){
+        //firstName = var1;
+        //lastName = "Bond";
+        //var name = firstName + " " + lastName;
+
+        //var closureFN = function() {
+        //    console.log("First and last name: = ", name);
+       // }
+          //  return closureFN;
+    //};
+
+    //var fullName = nameFN(fname);
+    //console.log("returned full name: =", fullName);
+    //console.log("var fname: =", fname);
+    //console.log("first name: = ", firstName);
+    //console.log("last name: = ", lastName);
+    //fullName();
 
 
 
@@ -299,5 +334,17 @@ console.log("---------- Scope & Context ----------------");
                   called a closure.  Simply accessing variables outside of its
                   immediate lexical scope creates a closure.
     */
+
+    a = function() {
+        var privateFunction = function() {
+            alert("Hello");
+
+        };
+        return {
+            publicFunction: function() {
+                privateFunction();
+            }
+        }
+    };
 
 })(); // end wrapper
