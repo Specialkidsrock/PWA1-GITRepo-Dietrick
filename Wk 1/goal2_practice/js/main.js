@@ -1,6 +1,6 @@
 /*
      Name: Dietrick, Terry
-     Date: 06 Feb 2015
+     Date: 14 Feb 2015
      Class & Section:  PWA1-Sec 01
      Comments: "Goal 2: JavaScript Practice"
  */
