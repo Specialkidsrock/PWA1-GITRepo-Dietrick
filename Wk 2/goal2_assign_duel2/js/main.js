@@ -21,7 +21,7 @@
     //var player1Damage = 30;                                 //Variable assigned to player1 as maximum damage it can incur on the other player each round
     //var player2Damage = 30;                                 //Variable assigned to player2 as maximum damage it can incur on the other player each round
 
-    //player health
+    //player health                                             //commented out week 1 code
     //var playerOneHealth = 100;                              //Variable assigned as the starting max health of player 1
     //var playerTwoHealth = 100;                              //Variable assigned as the starting max health of player 2
 
@@ -44,15 +44,15 @@
             var f1 = Math.floor(Math.random() * (playerOnes[1] - minDamage1) + minDamage1);     //random formula is - Math.floor(Math.random() * (max - min) + min);
             var f2 = Math.floor(Math.random() * (playerTwos[1] - minDamage2) + minDamage2);     //math.random generates a decimal number between 0 an 1
                                                                                                 //(max - min) + min then is used to generate a number between the min and max and the math.floor rounds it to an integer
-            //console.log(f1);                              //prints to the console to verify the random numbers are being generated
-            //console.log(f2);                              //prints to the console to verify the random numbers are being generated
+            //console.log(f1);                              //prints to the console to verify the random numbers are being generated //commented out week 1 code
+            //console.log(f2);                              //prints to the console to verify the random numbers are being generated //commented out week 1 code
 
             //inflict damage
             playerOnes[2] -= f1;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
             playerTwos[2] -= f2;                          //subtracts the random damage number from the player 1 health (same as playerOneHealth = playerOneHealth - f1)
 
-            //console.log(playerOneHealth);
-            //console.log(playerTwoHealth);
+            //console.log(playerOneHealth);                 //commented out week 1 code
+            //console.log(playerTwoHealth);                 //commented out week 1 code
 
             //console.log(playerOneName + " : " + playerOneHealth + "  " + playerTwoName + " : " + playerTwoHealth);
 
