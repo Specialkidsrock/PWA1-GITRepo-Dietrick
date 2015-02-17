@@ -38,7 +38,7 @@
 	var search = function(query){                                            //declares the variable search with the value of the function query missing closing semi colon
 		
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");                                  //declares the array, and sets the users entered string items into an array
+        var queryArray = query.split(" ");                                  //declares the array, and sets the users entered string items into an array
 		
 		// array to store matched results from database.js
 		var results = [];                                                  //creates the results array
@@ -49,20 +49,20 @@
             // each db[i] is a single video item, each title ends with a pipe "|"
             // save a lowercase variable of the video title
             var dbTitleEnd = db[i].indexOf('|');                           //var dbTitleEnd that is assigned the value of the db index value i (a video item)
-            var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);     //assigns the var dbitem(not camelcase) the value of the current db index # and converts it to lower case from the 0 position of the string to the end
+            var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);     //assigns the var dbitem(not camelcase) the value of the current db index # and converts it to lower case from the 0 position of the string to the end
 
             // loop through the user's search query words
             // save a lowercase variable of the search keyword
             for (var ii = 0, jj = queryArray.length; ii < jj; ii++) {              //for loop that assigns the variable ii to 0 and jj the array length in a numeric value. if ii < jj it
-                var qitem = queryArray[ii].tolowercase();                  //stores the ii variable (keyword) into the queryarray as lowercase in the qitem variable
+                var qitem = queryArray[ii].toLowerCase();                  //stores the ii variable (keyword) into the queryarray as lowercase in the qitem variable
 
                 // is the keyword anywhere in the video title?
                 // If a match is found, push full db[i] into results array
                 var compare = dbitem.indexOf(qitem);                    //variable compare to compare if the
                 if (compare !== -1) {
                     results.push(db[i]);                                //adds new item to the end of the variable and returns the length
-                }
-                ;
+                };
+
             };
 
         };
