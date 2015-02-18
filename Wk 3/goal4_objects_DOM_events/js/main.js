@@ -1,6 +1,7 @@
 /*
     PWA1: Goal 4: Course Material 4
-
+    Terry Dietrick
+    16 Feb 2015
 	1. Objects
 	2. Document Object Model
 	3. Events and Callbacks
