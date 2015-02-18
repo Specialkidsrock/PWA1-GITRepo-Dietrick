@@ -2,7 +2,7 @@ body{font-family: "Myriad Pro";}
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix { -zoom: 1; }
 
 #container{padding:10px;}
 
@@ -20,7 +20,7 @@ span.awesome{font-weight:bold; font-style:italic;}
 #nav li a{display:block; padding:8px 6px; color:white; background:#f70; text-decoration:none; margin-right:10px;}
 #nav li a:hover{background:#aa0;}
 #nav li a.active{padding:12px; font-size:20px; background:white; color:#777;}
-#nav li:last-child a{margin-right:none;}
+#nav li:last-child a{margin-right:0;}
 
 #nav .close{position:absolute; top:23px; right:15px; cursor:pointer;}
 

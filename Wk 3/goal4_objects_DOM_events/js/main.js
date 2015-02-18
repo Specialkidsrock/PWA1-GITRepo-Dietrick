@@ -31,6 +31,11 @@ console.log('------Objects ----------');
 
 //{KEY : Value} pairings,
 
+    //person = {
+       // name: "bond",
+       // age: 35,
+       // secretAgent: true
+   // };
 
 
 /* accessing object properties
@@ -42,12 +47,24 @@ console.log('------Objects ----------');
      - also keep in mind that since the keys can be strings, you could access the keys using string variables
  */
 
+   // var personAge = "age";
+
+   // console.log(person.name, person[personAge], person["secretAgent"]);
+
 
 // setter
+
+   // person["age"] = "40";
+   // person.name = "JamesBond";
+   // console.log (person);
 
 
 
 //nested objects
+   // person = {birthday:{month:02, day:12}, name:"bond"};
+   // console.log(person["birthday"]["month"]);
+
+   // console.log(person.birthday.month);
 
 
 
@@ -57,6 +74,23 @@ console.log('------Objects ----------');
 
 console.log('------Object within an object, Arrays, Function ----------');
 
+    //var thatGuy = {
+    //    name: "JamesBond",
+    //    course: "PWA1",
+    //    address: {
+    //        num: 3300,
+    //        street: "University",
+    //        city: "Orlando",
+    //        cornerOf: ["University", "Semoran"]
+    //    },
+    //    showMyAddress: function(){
+    //        var addr = this.address.street + "," + this.address.city;
+    //        return addr;
+    //    }
+    //};
+    //
+    //console.log(thatGuy.showMyAddress());
+    //console.log(thatGuy.address.street + ", " + thatGuy.address.city);
 
 
 //properties & methods
@@ -71,8 +105,12 @@ console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
-
-
+    //var fsStudent = {};
+    //fsStudent.age = 22;
+    //fsStudent.career = "Web Development";
+    //fsStudent.sayHello = function(){
+    //    console.log("Hello!");
+    //};
 
 // above, we first initialize the object, then we created 2 properties 
 //   for the object, and a method called sayHello - notice that the method is 
@@ -81,6 +119,10 @@ console.log('------Objects - properties & methods ----------');
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
+    //fsStudent.sayHello();
+    //fsStudent["sayHello"]();
+    //console.log(fsStudent.age);
+    //console.log(fsStudent["age"]);
 
 
 
@@ -93,7 +135,18 @@ Method 2 "OBJECT Literal"
 	- below is the same object as in Method 1
 */
 
+    var fsStudent = {};
+    fsStudent.age = 22;
+    fsStudent.career = "Web Development";
+    fsStudent.sayHello = function(){
+        console.log("Hello!");
+    };
 
+    fsStudent.sayHello();
+    fsStudent["sayHello"]();
+
+    console.log(fsStudent.age);
+    console.log(fsStudent["age"]);
 
 
 //---------------------------------------------
@@ -152,7 +205,13 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log("---------- Object - For In Loop ----------------");
 
+    var students = {name:"JamesBond", gender:"male", job:"student"};
 
+    for(var key in students){
+        console.log("Key Name:", key);
+        console.log("Value of the key[",key,"]:", students[key]);
+
+    }
 
 /*
 	===============================================
@@ -187,6 +246,12 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
+    var myNum = 1;
+    myString = String(myNum);
+    console.log("myString:", typeof myString, myString);
+    myBool = Boolean(myString);
+    console.log("myBool:,", typeof myBool, myBool);
+
 
 
 /*
@@ -197,17 +262,40 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
 
 // #1 - shows string length
+    myStr = "OMG";
+    console.log(myStr.length);
 
 
 // #2 - shows array length
-	
+	myArr = [6, 10];
+    console.log(myArr.length);
 
 // #3 - shows and array of objects, inside of an object length
-	
+	var obj1 = {
+        schoolName: "Full Sail",
+        address: "123 University Blvd",
+        studentCount: 16000,
+        students: [
+            {name: "Jane Doe", GPA: 2.6, classes: ["PWA1", "ARD"]},
+            {name: "Albert Einstein", GPA: 4.0},
+            {name: "James Bond", GPA: 3.9}
+        ]
+    };
+    console.log("Number of object fields", obj1.students.length);
 
 console.log('------ MORE Object examples - Objects/Functions ----------');
 
 // showing a function call and creating a method
+
+    var fn = function(name, course){
+        return {
+            sayHi: function(){
+                console.log("My name is " + name + " I am in course " + course);
+            }
+        }
+    };
+    fn("JamesBond", "PWA1").sayHi();
+    
 
 
 
