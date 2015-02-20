@@ -447,28 +447,74 @@ console.log('------------ querySelectorAll -------------------');
 
         attr = href, src, class
 */
+    console.log("------------ Manipulating Attributes setAttribute / getAttribute ------------");
+
+    var navLinks = document.querySelectorAll("#nav li");
+    for (var i = 0, max = navLinks.length; i < max; i++) {
+        var href = navLinks[i].firstChild.getAttribute("href");
+        console.log("Manipulation HREF:", href);
+
+        if (href === "#1") {
+            var href2 = navLinks[i].firstChild;
+            console.log(href2);
+
+            href2.setAttribute("href", "http://www.fullsail.com");
+
+
+        }
+        //}
+
+
+        /*
+         ==================================================================
+         Manipulating CSS Classes
+         ------------------------------------------------------------------
+         - If you use setAttribute to change the "class" attribute of an element,
+         that element is immediately redrawn with the new css styles.
+
+         - Just like normal, you can set MULTIPLE classes at once.
+
+         element.setAttribute('class', 'thumb active')
+
+         - FYI: Elements can have multiple classes.
+         */
+
+        console.log('------------ Manipulating CSS Classes -------------------');
+
+        //var aClass = navLinks[i].firstChild.getAttribute("class");
+        //console.log("Manipulation CLASS: ", aClass);
+        //
+        //navLinks[i].firstChild.setAttribute("class", "navitem active");
+
+        /*
+         ==================================================================
+         Manipulating HTML
+         ------------------------------------------------------------------
+         HTML elements also have a property called "innerHTML"
+         .innerHTML is both a getter and setter property (using strings)
+
+
+         */
+
+        console.log('------------ Manipulating HTML -------------------');
+
+         navLinks[i].firstChild.setAttribute("href","http//google.com");
+
+    };
+
+        var navLinks = document.querySelectorAll("#nav a");
+        console.log(navLinks[1].innerHTML);
+
+        navLinks[1].innerHTML = "This Link Rocks!";
+
+        for(var i = 0, max = navLinks.length; i < max; i ++){
+            navLinks[i].innerHTML = "Click me" + [i];
+
+        }
 
 
 
-/*
-	==================================================================
-	Manipulating CSS Classes
-	------------------------------------------------------------------
-		- If you use setAttribute to change the "class" attribute of an element,
-			that element is immediately redrawn with the new css styles.
-		
-		- Just like normal, you can set MULTIPLE classes at once.
-		
-			element.setAttribute('class', 'thumb active')
-
-		- FYI: Elements can have multiple classes.
-*/
-
-console.log('------------ Manipulating CSS Classes -------------------');
-
-
-/*
-	==================================================================
+/*	==================================================================
 	Replacing an HTML container with new HTML
 	------------------------------------------------------------------
 		- In a later project, you are building a gallery. 
@@ -478,7 +524,8 @@ console.log('------------ Manipulating CSS Classes -------------------');
 Sample Link: http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg
 */
 
-
+    var bigImage = document.querySelector("#contentPreview img");
+    bigImage.setAttribute("src","http://cdn.instructables.com/F23/YMO0/FPIUQOJF/F23YMO0FPIUQOJF.LARGE.jpg");
 
 /*
 	==================================================================
