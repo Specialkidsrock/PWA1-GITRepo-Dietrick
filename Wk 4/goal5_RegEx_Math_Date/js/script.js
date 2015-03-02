@@ -308,30 +308,46 @@ console.log('------------ DOM Events -------------------');
 
 console.log('------------ Regular Expressions -------------------');
 
+    jamesbond@fullsail.com
+    jamesBond@fullsail.com
+    James-Bond@fullsail.com
+    James.Bond@fullsail.com
+    jamesbond@66.192.104.74
+
+    Date: /^(?:(?:(:?:0?[13578]|1[02])(\/)))
+
+    var emailRegEx = /^[\w\.\-]+@([\w\-]+\.)+[a-zA-]+$/;
+
+    var email = new RegExp(emailRegEx);
+
+
+
 /******************************************************************************
 STUDENT ACTIVITY
 
 	1.  Write a RegEx for a basic name (containing only letters)
 
-		Answer: 
+		Answer: /^[a-zA-Z]+$/
 
 	2.  What are the possible answers for this: /[Jj]ava[Ss]cript/
 
-		Answer: 
+		Answer: "Javascript", "JavaScript", "javascript", "javaScript"
 
 	3. 	What are the possible answers for this: /^(Java)?Script$/
 
-		Answer: 
+		Answer: "JavaScript" or "Script".. but not "JavaJavaScript"
 
 	4. 	Describe the possible answer for this: /^[a-zA-Z\^\-\.]+$/
 
-		Answer: 
+		Answer: matches 1 or more of only letters
 
 	5.	Combining character sets can create sequences of matches.
 		
 		Describe the possible answers for this: /^[a-zA-Z]+[0-9]$/ 	
 
-		Answer: 
+		Answer:
+        matches 1 or more letters at the beginning, and 1 number at the end -
+        would match"james1", but not "james11" or "11james"
 
 ----------------------------------------------------------------------------- */
 
@@ -348,6 +364,30 @@ STUDENT ACTIVITY
 	split()		string.split.(RegExp): cuts a string into an array, making cuts at matches
 */
 
+    var emailRegEx = /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/;
+    var str = "My personal email is jc@google.com, but my work emails is jc@fullsail.com";
+
+    console.log(emailRegEx.test(str));
+
+    console.log(str.search(emailRegEx));
+
+    var clean = str.replace(emailRegEx,"XXX@XXX.com");
+    console.log(clean);
+
+    var clean = clean.replace((emailRegEx,"jc@gmail.com"));
+    console.log(clean);
+
+    console.log(str.match(emailRegEx));
+
+    console.log(email.test(str));
+
+    console.log(str.search(email));
+
+    var clean = str.replace(/(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/,"XXX@XXX.com");
+    console.log(clean);
+
+    var clean = clean.replace((/(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/, "jc@gmail.com"));
+    console.log(clean);
 
 
 
@@ -439,7 +479,7 @@ STUDENT ACTIVITY
 
     var num2 = (Math.round(num));
     console.log(num2);
-    
+
 
 
 /*	==================================================================
