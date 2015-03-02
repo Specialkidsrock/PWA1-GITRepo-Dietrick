@@ -403,7 +403,15 @@ STUDENT ACTIVITY
 
     console.log('------------ Math Methods -------------------');
 
+    //console.log(document.getElementById("tagbox").innerHTML=Math.random());
 
+    var rand = (Math.random() * 10 +1);
+    console.log("rand: ",rand);
+    var num = Math.floor(rand);
+    console.log(num);
+
+    console.log(document.getElementById("tagbox").innerHTML = Math.min(5,10));
+    console.log(document.getElementById("tagbox").innerHTML = Math.round(2.5));
 
     /******************************************************************************
      STUDENT ACTIVITY
@@ -421,7 +429,17 @@ STUDENT ACTIVITY
 
     ****************************************************************************/
 
+    console.log(Math.max(100, 1000, 50, 2, 55, 75));
+    console.log(Math.min(100, 1000, 50, 2, 55, 75));
 
+    console.log(Math.floor(Math.random() * 10000 + 100));
+
+    var num = (Math.random()* 100 + 10);
+    console.log(num);
+
+    var num2 = (Math.round(num));
+    console.log(num2);
+    
 
 
 /*	==================================================================
@@ -437,21 +455,21 @@ STUDENT ACTIVITY
 
     console.log('------------ Date Methods -------------------');
 
-    console.log(new Date());
+    //console.log(new Date());
+    //
+    //var d = new Date();
+    ////console.log(d.getDate());
+    ////console.log(d.getDay());
+    ////console.log(d.getFullYear());
+    ////console.log(d.getHours());
+    ////console.log(d.getMilliseconds());
+    //
+    //console.log(d.setFullYear(2021, 0, 01));
+    //document.getElementById("tagbox").innerHTML=d;
+    //
+    //var d = new Date();
+    //console.log(typeof d.toString());
 
-    var d = new Date();
-    //console.log(d.getDate());
-    //console.log(d.getDay());
-    //console.log(d.getFullYear());
-    //console.log(d.getHours());
-    //console.log(d.getMilliseconds());
-
-    console.log(d.setFullYear(2021, 0, 01));
-    document.getElementById("tagbox").innerHTML=d;
-
-    var d = new Date();
-    console.log(typeof d.toString());
-    
 
 
 

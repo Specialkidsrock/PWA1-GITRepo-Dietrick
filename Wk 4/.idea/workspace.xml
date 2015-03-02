@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb47462-482e-48dc-8ed1-cf86a6f96cf3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Wk 3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Wk 3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goal4_objects_DOM_events/.idea/workspace.xml" afterPath="$PROJECT_DIR$/goal4_objects_DOM_events/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goal5_RegEx_Math_Date/js/script.js" afterPath="$PROJECT_DIR$/goal5_RegEx_Math_Date/js/script.js" />
     </list>
     <ignored path="Wk 4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goal5_RegEx_Math_Date/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94889265" vertical-offset="6238" max-vertical-offset="6945">
-              <caret line="453" column="4" selection-start-line="453" selection-start-column="4" selection-end-line="453" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.770017" vertical-offset="6163" max-vertical-offset="7215">
+              <caret line="441" column="4" selection-start-line="441" selection-start-column="4" selection-end-line="441" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -221,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/goal5_RegEx_Math_Date/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94889265" vertical-offset="6238" max-vertical-offset="6930">
-          <caret line="453" column="4" selection-start-line="453" selection-start-column="4" selection-end-line="453" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.770017" vertical-offset="6163" max-vertical-offset="7215">
+          <caret line="441" column="4" selection-start-line="441" selection-start-column="4" selection-end-line="441" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
