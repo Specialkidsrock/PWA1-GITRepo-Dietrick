@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c910aaa-97bb-47c9-a51e-201b38a7aade" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Wk 4/goal4_objects_DOM_events/js/main.js" afterPath="$PROJECT_DIR$/../Wk 4/goal4_objects_DOM_events/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Wk 4/goal5_RegEx_Math_Date/js/script.js" afterPath="$PROJECT_DIR$/../Wk 4/goal5_RegEx_Math_Date/js/script.js" />
     </list>
     <ignored path="Wk 3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,7 +110,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wk 4/goal4_objects_DOM_events" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wk 4" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
