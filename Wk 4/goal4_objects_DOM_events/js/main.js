@@ -31,10 +31,10 @@
 console.log('------Objects ----------');
 
 //{KEY : Value} pairings,
-    person ={"name":"bond", "age":35, "secretAgent":true};
-
-
-    person ={name:"bond", age:35, secretAgent:true};
+//    person ={"name":"bond", "age":35, "secretAgent":true};
+//
+//
+//    person ={name:"bond", age:35, secretAgent:true};
 
 
 /* accessing object properties
@@ -46,25 +46,25 @@ console.log('------Objects ----------');
      - also keep in mind that since the keys can be strings, you could access the keys using string variables
  */
 
-    var personAge = "age";
-    console.log(person.name, person[personAge], person["secretAgent"]);
+//    var personAge = "age";
+//    console.log(person.name, person[personAge], person["secretAgent"]);
+//
+//
+//
+//// setter
+//
+//    person["age"] = 40;
+//    person.name = "JamesBond";
+//    console.log(person);
+//
+//
+////nested objects
+//
+//    person = {birthday:{month:02, day:12}, name:"bond"};
+//    console.log(person["birthday"]["month"]);
+//
+//    console.log(person.birthday.month);
 
-
-
-// setter
-
-    person["age"] = 40;
-    person.name = "JamesBond";
-    console.log(person);
-
-
-//nested objects
-
-    person = {birthday:{month:02, day:12}, name:"bond"};
-    console.log(person["birthday"]["month"]);
-
-    console.log(person.birthday.month);
-    
 
 
 
@@ -75,6 +75,24 @@ console.log('------Objects ----------');
 
 console.log('------Object within an object, Arrays, Function ----------');
 
+    var thatGuy = {
+        name: "JamesBond",
+        course: "PWA1",
+        address: {
+            num: 3300,
+            street: "University",
+            city: "Orlando",
+            cornerOf:["University", "Semoran"]
+
+        },
+        showMyAddress: function(){
+            var addr = this.address.street + "," + this.address.city;
+            return addr;
+        }
+    };
+
+    console.log(thatGuy.showMyAddress());
+    console.log(thatGuy.address.street + ", " + thatGuy.address.city);
 
 
 //properties & methods
@@ -89,6 +107,13 @@ console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
+    var fsStudent = {};
+    fsStudent.age = 22;
+    fsStudent.career = "Web Dev";
+    fsStudent.sayHello = function(){
+        console.log("Hello")
+    };
+
 
 
 
@@ -100,6 +125,12 @@ console.log('------Objects - properties & methods ----------');
 // 	by using their name as a string - all of the below are valid:
 
 
+    fsStudent.sayHello();
+    fsStudent["sayHello"]();
+
+
+    console.log(fsStudent.age);
+    console.log(fsStudent["age"]);
 
 
 /* --------------
@@ -110,7 +141,14 @@ Method 2 "OBJECT Literal"
 
 	- below is the same object as in Method 1
 */
-
+    //var fsStudent = {
+    //    age: 22,
+    //    career: "Web Dev",
+    //    sayhello: fuction(){
+    //    console.log("hello!");
+    //
+    //}
+    //};
 
 
 
@@ -143,6 +181,30 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 // this is integrating multiple data types - object with an array of objects
 
+    //var obj1 = {
+    //    schoolName: "Fullsail",
+    //    address: "123 University Blvd",
+    //    studentCount: 16000,
+    //    students:[
+    //        {name:"Jane Doe", GPA: 2.6, classes:["PWA1","PWA2"]},
+    //        {name:"Albert Einstein", GPA: 4.0},
+    //        {name:"James Bond", GPA: 3.9}
+    //        ]
+    //};
+    //
+    //console.log(obj1.schoolName);       //dot syntax
+    //console.log(obj1["schoolName"]);    //index syntax
+    //
+    //var newCnt = "studentCount";
+    //console.log(obj1[newCnt]);
+    //
+    //var fieldName1 = "address";
+    //console.log(obj1[fieldName1]);
+    //
+    //console.log("James Bond's GPA:", obj1.students[2].GPA);
+    //console.log("James Bond's GPA:", obj1["students"][2]["GPA"]);
+    //
+
 
 
 /* ----------------------------------------------------------------------------
@@ -157,6 +219,20 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
     2.  console.log the average grade by calling the gradeAvg method.
 ----------------------------------------------------------------------------- */
 
+    //var gradeAvg = function(obj){
+    //    var count = 0;
+    //    var total = 0;
+    //
+    //    for(i = 0, j = obj.students.length; i < j; i++){
+    //        count++;
+    //        total = total + obj.students[i]["GPA"];
+    //
+    //    };
+    //    return total/count;
+    //
+    //};
+    //
+    //console.log("Average Grade: ", gradeAvg(obj1));
 
 
 
@@ -168,9 +244,13 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 		obj[key]
 	}
 */
-    console.log("---------- Object - For In Loop ----------------");
-
-
+    //console.log("---------- Object - For In Loop ----------------");
+    //var students = {name: "JamesBond", gender: "male", job: "student"};
+    //
+    //for(var key in students){
+    //    console.log("Key Name:", key);
+    //    console.log("Value of the key[",key,"]: ",students[key]);
+    //};
 
 /*
 	===============================================
@@ -205,6 +285,11 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
+    var myNum = 1;
+    myString = String(myNum);
+    console.log("myString:", typeof myString, myString);
+    myBool = Boolean(myString);
+    console.log("myBool:", typeof myBool, myBool);
 
 
 /*
@@ -216,16 +301,46 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 // #1 - shows string length
 
+    myStr = "OMG";
+    console.log(myStr.length);
+
 
 // #2 - shows array length
-	
+
+    myArr = [6, 10];
+    console.log(myArr.length);
+
 
 // #3 - shows and array of objects, inside of an object length
+
+    var obj1 = {
+        schoolName: "Fullsail",
+        address: "123 University Blvd",
+        studentCount: 16000,
+        students:[
+            {name:"Jane Doe", GPA: 2.6, classes:["PWA1","PWA2"]},
+            {name:"Albert Einstein", GPA: 4.0},
+            {name:"James Bond", GPA: 3.9}
+        ]
+    };
+
+    console.log("number of object fields", obj1.students.length);
+
 	
 
 console.log('------ MORE Object examples - Objects/Functions ----------');
 
 // showing a function call and creating a method
+
+    var fn = function(name, course){
+        return{
+            sayHi: function(){
+                console.log("My name is " + name + " I am in course" + course);
+            }
+        }
+    };
+
+    fn("JamesBond","PWA1").sayHi();
 
 
 
